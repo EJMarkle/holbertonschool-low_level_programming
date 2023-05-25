@@ -12,7 +12,7 @@ int main(void)
 		n <= 9;
 		++n)
 	{
-		putchar(n);
+		putchar(n + '0');
 	}
 	putchar('\n');
 	return (0);

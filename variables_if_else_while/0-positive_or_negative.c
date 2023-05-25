@@ -1,4 +1,5 @@
-# include <stdlb.h>
+# include <stdio.h>
+# include <stdlib.h>
 # include <time.h>
 /**
  * main - gen random number
@@ -10,14 +11,21 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	printf("%d ", n);
 	if
 		(n > 0)
-		printf("is positive")
+	{
+		printf("%d is positive\n", n);
+	}
+	else if
+		(n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
 	else
-		(n = 0)
-		printf("is zero")
-	else
-		(n < 0)
-		printf("is negative")
+		(n < 0);
+	{
+		printf("%d is negative\n", n);
+	}
 	return (0);
 }

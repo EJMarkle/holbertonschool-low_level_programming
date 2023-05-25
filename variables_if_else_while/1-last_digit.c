@@ -3,6 +3,8 @@
 #include <time.h>
 /*
  * main - prints some thing teehee
+ *
+ * Description: this is certainly a description
  * Return: 0
  */
 int main(void)

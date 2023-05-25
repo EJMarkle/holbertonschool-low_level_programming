@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
+/**
  * main - prints some thing teehee
  *
  * Description: this is certainly a description

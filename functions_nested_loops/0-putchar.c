@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * maii - puts char lol
+ * main - puts char lol
  * Return: nill
  */
 int main(void)

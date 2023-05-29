@@ -1,10 +1,10 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _putchar - puts char lol
+ * maii - puts char lol
  * Return: nill
  */
-int _putchar(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -15,5 +15,7 @@ int _putchar(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
+
 	return (0);
 }

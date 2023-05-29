@@ -1,10 +1,7 @@
-#ifndef main.h
-#define main.h
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-        printf("_putchar\n");
-        return (0);
-}
+int main(void);
+int _putchar(void);
 
 #endif

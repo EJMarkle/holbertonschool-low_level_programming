@@ -2,7 +2,7 @@
 /**
  * _isalpha - checks for betic char
  * Return: 1 if c is a letter, 0 otherwise
- * @c; char to check
+ * @c: char to check
  */
 int _isalpha(int c)
 {

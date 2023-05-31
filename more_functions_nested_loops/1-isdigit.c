@@ -3,6 +3,7 @@
 /**
  * _isdigit - checks if a char is a dig
  * Return: 1 if c is a dig 0 otherwise
+ * @c: char to be checked
  */
 
 int _isdigit(int c)

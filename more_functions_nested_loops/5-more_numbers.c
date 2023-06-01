@@ -16,9 +16,9 @@ for (c = 0; c <= 10; c++)
 	{
 		if (n > 9)
 		{
-			_putchar('0' + (c / 10));
+			_putchar('0' + (n / 10));
 		}
-		_putchar('0' + (c / 10));
+		_putchar('0' + (n % 10));
 	}
 	_putchar('\n');
 }

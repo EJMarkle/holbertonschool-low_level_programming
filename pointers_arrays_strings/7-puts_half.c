@@ -20,6 +20,8 @@ void puts_half(char *str)
 	if
 	(b % 2 == 0)
 	a = b / 2;
+	else
+	a = (b + 1) / 2;
 	while
 	(str[a] != '\0')
 	{

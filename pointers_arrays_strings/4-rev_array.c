@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * reverse_array - reverses the content of an array of ints
  * @n: # of elements in the array
@@ -8,12 +9,13 @@
 
 void reverse_array(int *a, int n)
 {
-	int length = strlen(s);
+	int i;
+	int temp;
 
-	while (length > 0)
+	for (i = 0; i < n / 2; i++)
 	{
-		_putchar(s[length - 1]);
-		length--;
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
 	}
-	_putchar('\n');
 }

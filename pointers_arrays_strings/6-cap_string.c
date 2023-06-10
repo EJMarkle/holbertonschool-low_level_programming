@@ -7,6 +7,7 @@
 char *cap_string(char *str)
 {
 	int capitalize = 1;
+	int n = 0;
 
 	for (int n = 0; str[n] != '\0'; n++)
 	{

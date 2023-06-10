@@ -11,7 +11,6 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *dest_start = dest;
-	char *src_start = src;
 
 	while (n > 0)
 	{

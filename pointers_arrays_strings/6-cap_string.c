@@ -6,10 +6,9 @@
  */
 char *cap_string(char *str)
 {
-	int n;
 	int capitalize = 1;
 
-	for (int n = 0, str[n] != '\0'; n++)
+	for (int n = 0; str[n] != '\0'; n++)
 	{
 		if (str[n] == ' ' ||
 			str[n] == '\t' ||

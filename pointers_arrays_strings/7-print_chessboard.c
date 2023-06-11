@@ -6,27 +6,15 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	char row[] = "12345678";
-	char col[] = "abcdefgh";
-	int rowcnt;
-	int colcnt;
+	int i;
+	int j;
 
-	for (rowcnt = 0; rowcnt < 8; rowcnt++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(row[rowcnt]);
-
-		for (colcnt = 0; colcnt < 8; colcnt++)
+		for (j = 0; j < 8; j++)
 		{
-			_putchar(a[rowcnt][colcnt]);
-			_putchar(' ');
+			_putchar("%c ", a[i][j]);
 		}
-		_putchar('\n');
+		_putchar("\n");
 	}
-	_putchar(' ');
-	for (colcnt = 0; colcnt < 8; colcnt++)
-	{
-		_putchar(col[colcnt]);
-		_putchar(' ');
-	}
-	_putchar('\n');
 }

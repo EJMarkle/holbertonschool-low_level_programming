@@ -5,8 +5,6 @@
  * print_diagsums - prints sum of 2 diagnals of a square matrix of ints
  * @a: array that hold the sums
  * @size: size of matrix
- * @suma: sum of first diag
- * @sumb: sum of second diag
  * Return: 0
  */
 void print_diagsums(int *a, int size)

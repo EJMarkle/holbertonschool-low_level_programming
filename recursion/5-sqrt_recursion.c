@@ -3,9 +3,6 @@
  * _sqrt_recursion - returns the sq root of a number
  * @n: number to find the square root of
  * Return: Sq root, -1 if there is no natural square root
- *
- * sqrt_helper - recursive helper function to find sq root
- *
  */
 
 int _sqrt_recursion(int n);
@@ -19,6 +16,14 @@ int _sqrt_recursion(int n)
 	}
 	return (sqrt_helper(n, 0, n));
 }
+
+/**
+ * sqrt_helper - recursive helper function to find sq root
+ * @n: number to find sq root of
+ * @start: starting value of search range
+ * @end: ending value of search range
+ * Return: nat sq root of n
+ */
 
 int sqrt_helper(int n, int start, int end)
 {

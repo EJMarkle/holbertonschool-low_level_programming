@@ -11,10 +11,9 @@ size_t list_len(const list_t *h)
 
 	/* iterate through nodes until h = null */
 	while (h != NULL)
-	/* increases element counter, then sets h to be the next node */
 	{
-		elemcount++;
-		h = h->next;
+		elemcount++; /* increment element counter */
+		h = h->next; /* move to next node */
 	}
 	return (elemcount);
 }

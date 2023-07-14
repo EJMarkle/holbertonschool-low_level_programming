@@ -14,9 +14,9 @@
  */
 typedef struct list_s
 {
-	char *str;
-	unsigned int len;
-	struct list_s *next;
+	char *str; /* pointer to a string that stores the node data */
+	unsigned int len; /* represents length of the string */
+	struct list_s *next; /* pointer to next node */
 } list_t;
 
 size_t print_list(const list_t *h);

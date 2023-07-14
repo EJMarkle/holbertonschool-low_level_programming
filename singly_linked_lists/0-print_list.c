@@ -9,7 +9,7 @@ size_t print_list(const list_t *h)
 {
 	size_t nodecount = 0;
 
-	/* while the head pointer isn't null */
+	/* iterate through list until h becomes NULL */
 	while (h != NULL)
 	{
 		/* h->str, h is pointer to struct and str is member to be accessed */

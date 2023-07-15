@@ -11,9 +11,12 @@ void print_binary(unsigned long int n)
 	int bitsize;
 
 	/* set bitsize to size of us long int */
+	/* 8 bits in a byte, so we multiply by 8 to find bits */
 	bitsize = sizeof(unsigned long int) * 8;
 
 	/* start mask at leftmost bit */
+	/* 1 = int literal UL = unsigned long int */
+	/* bitsize - 1 calcs position of leftmost bit */
 	bitmask = 1UL << (bitsize - 1);
 
 	/* check bits from left to right */

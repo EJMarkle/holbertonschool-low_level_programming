@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	/* set bitsize to size of us long int */
 	/* 8 bits in a byte, so we multiply by 8 to find bits */
-	bitsize = sizeof(unsigned long int) * 8;
+	bitsize = sizeof(unsigned long int) * 8 - 1;
 
 	/* start mask at leftmost bit */
 	/* 1 = int literal UL = unsigned long int */

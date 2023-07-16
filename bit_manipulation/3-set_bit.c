@@ -8,15 +8,15 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int mask;
+	unsigned long int bitmask;
 
 	/* checks if index is out of range */
 	if (index >= (sizeof(unsigned long int) * 8))
 		return (-1);
 	/* creates bitmask with only the bit at the index set to 1 */
-	mask = 1UL << index;
+	bitmask = 1UL << index;
 	/* use bitwise OR to set bit at index to 1 */
-	*n = (*n) | mask;
+	*n = (*n) | bitmask;
 
 	return (1);
 }

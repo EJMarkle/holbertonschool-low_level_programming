@@ -7,28 +7,25 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int bitmask;
-	int bitsize;
+	unsigned long int mask;
+	int flag;
 
-	/* set bitsize to size of us long int */
-	/* 8 bits in a byte, so we multiply by 8 to find bits */
-	bitsize = sizeof(unsigned long int) * 8;
+	mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	flag = 0;
 
-	/* start mask at leftmost bit */
-	/* 1 = int literal UL = unsigned long int */
-	/* bitsize - 1 calcs position of leftmost bit */
-	bitmask = 1UL << (bitsize - 1);
-
-	/* check bits from left to right */
-	while (bitmask > 0)
+	while (mask > 0)
 	{
-		/* if bit is 1, print 1. else print 0 */
-		if (n & bitmask)
+		if (n & mask)
+		{
 			_putchar('1');
-		else
+			flag = 1;
+		}
+		else if (flag || mask == 1)
+		{
 			_putchar('0');
-
-		/* shift mask 1 bit to the right */
-		bitmask = bitmask >> 1;
+		}
+		mask >>= 1;
 	}
+	if (flag == 0)
+		_putchar('0');
 }
